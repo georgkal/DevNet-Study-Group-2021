@@ -1,0 +1,37 @@
+<!--A prolog defines the XML version and the character encoding:-->
+<?xml version="1.0" encoding="utf-8" ?> 
+<!--Root element-->
+<body>
+    <!--Child element-->
+    <spine id="1">
+        <!--Child element-->
+        <switch>SPINE</switch>
+        <type>N9K</type>
+        <hostname>SPINE201</hostname>
+    </spine>
+    <spine id="2">
+        <switch>SPINE</switch>
+        <type>N9K</type>
+        <hostname>SPINE202</hostname>
+    </spine>
+    <leaf id="1">
+        <switch>LEAF</switch>
+        <type>N9K</type>
+        <hostname>LEAF101</hostname>
+    </leaf>
+    <leaf id="2">
+        <switch>LEAF</switch>
+        <type>N9K</type>
+        <hostname>LEAF102</hostname>
+    </leaf>
+    <leaf id="3">
+        <switch>LEAF</switch>
+        <type>N9K</type>
+        <hostname>LEAF103</hostname>
+    </leaf>
+</body>
+
+<role>leaf
+
+    
+</role>

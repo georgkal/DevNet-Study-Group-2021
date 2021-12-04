@@ -1,0 +1,26 @@
+NO comments
+{
+  "spine": [
+    {"switch": "spine",
+    "type": "N9K",
+    "hostname": "SPINE201"
+},
+    {"switch": "spine",
+    "type": "N9K",
+    "hostname": "SPINE202"}],
+  "leaf": [
+    {"switch": "leaf",
+      "type": "N9K",
+      "hostname": "LEAF101"
+    },
+    {
+      "switch": "leaf",
+      "type": "N9K",
+      "hostname": "LEAF102"
+    },
+    {
+      "switch": "leaf",
+      "type": "N9K",
+      "hostname": "LEAF103"
+    }]
+}

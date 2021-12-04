@@ -1,0 +1,19 @@
+---
+#This is comment  
+spine:
+- switch: Spine
+  type: N9K
+  hostname: SPINE-201
+- switch: Spine
+  type: N9K
+  hostname: SPINE-202
+leaf:
+- switch: Leaf
+  type: N9K
+  hostname: LEAF-101
+- switch: Leaf
+  type: N9K
+  hostname: LEAF-102
+- switch: Leaf
+  type: N9K
+  hostname: LEAF-103
