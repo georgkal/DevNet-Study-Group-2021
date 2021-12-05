@@ -17,3 +17,11 @@ leaf:
 - switch: Leaf
   type: N9K
   hostname: LEAF-103
+
+element1:
+- el: 1
+  el1: 2
+  el3: 3
+- ty: 1
+  ty1: 2
+  ty2: 3

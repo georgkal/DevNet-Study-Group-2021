@@ -1,10 +1,6 @@
-<!--A prolog defines the XML version and the character encoding:-->
 <?xml version="1.0" encoding="utf-8" ?> 
-<!--Root element-->
 <body>
-    <!--Child element-->
     <spine id="1">
-        <!--Child element-->
         <switch>SPINE</switch>
         <type>N9K</type>
         <hostname>SPINE201</hostname>
@@ -30,8 +26,3 @@
         <hostname>LEAF103</hostname>
     </leaf>
 </body>
-
-<role>leaf
-
-    
-</role>
