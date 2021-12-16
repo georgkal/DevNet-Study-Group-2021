@@ -6,7 +6,7 @@ data = open("YAML.yaml").read()
 
 yaml_data = yaml.load(data, Loader=yaml.FullLoader)
 
-pprint(yaml_data["spine"])
+#
 
 print("====== SPINE ========")
 for spine in yaml_data["spine"]:
