@@ -1,0 +1,31 @@
+---
+  #Play
+- name: Get facts from IOS sandbox
+  hosts: "{{ group }}"
+  connection: ansible.netcommon.network_cli
+  gather_facts: False
+  tasks:
+    - name: Get config only
+      cisco.ios.ios_facts:
+        gather_subset: config
+      register:
+        config_ios
+      when: ansible_network_os= cisco.ios.ios
+    - name: Get config only
+      cisco.nxos.nxos_facts:
+        gather_subset: config
+      register:
+        config_ios
+      when: "ansible_network_os" == "cisco.nxos.nxos"    
+    - name: Save config
+      local_action:
+        module: copy
+        content: "{{ config_ios['ansible_facts']['ansible_net_config'] | to_nice_json }}"
+        dest: "./{{inventory_hostname}}.txt"
+    # - name: Get only hardware facts
+    #   cisco.ios.ios_facts:
+    #     gather_subset: hardware
+    #   register: hw_ios
+    # - name: Display HW facts
+    #   #debug: var=hw_ios
+    #   debug: var=hw_ios["ansible_facts"]["ansible_net_iostype"]

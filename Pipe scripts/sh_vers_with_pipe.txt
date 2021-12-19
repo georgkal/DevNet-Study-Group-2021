@@ -1,0 +1,1 @@
+sh vers | i uptime
